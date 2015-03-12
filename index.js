@@ -12,7 +12,7 @@ module.exports = (function() {
     app.use(express.static(__dirname + '/public'));
 
     app.post('/', function(req, res) {
-        console.log('REQUEST: ', req.body, "\n");
+        console.log('REQUEST: ', JSON.stringify(req.body), "\n");
         res.json({});
     });
 
